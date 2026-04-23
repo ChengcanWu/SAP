@@ -1,0 +1,21 @@
+# Suggested order: install torch that matches your CUDA from https://pytorch.org, then install the rest
+# Python 3.10+ recommended
+
+# --- Core ---
+torch>=2.1.0
+transformers>=4.40.0
+peft>=0.11.0
+accelerate>=0.28.0
+datasets>=2.18.0
+safetensors>=0.4.0
+
+# --- Data and I/O ---
+pandas>=2.0.0
+pyarrow>=14.0.0
+
+# --- Often required by Transformers tokenizers / protobuf ---
+sentencepiece>=0.1.99
+protobuf>=4.0.0
+
+# Optional: quantisation with bitsandbytes — uncomment and align versions with torch
+# bitsandbytes>=0.41.0
